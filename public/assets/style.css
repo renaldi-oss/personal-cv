@@ -1,0 +1,213 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial';
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+canvas {
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+.container {
+    width: 100%;
+    background-color:#000;
+    /* display: flex;
+    justify-content: center; */
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow-y: auto;
+}
+@media only screen and (max-width: 850px) {
+    .container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.cv-page {
+    margin: 0 auto;
+    width: 850px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 850px) {
+    .cv-page {
+        width: 100%;
+    }
+}
+
+.cv-header {
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    background: #fff;
+    position: sticky;
+    top: -40px;
+}
+
+@media only screen and (max-width: 850px) {
+    .cv-header {
+        top: 0px;
+    }
+}
+
+.cv-top-line {
+    border-top: 4px solid #101214;
+    width: 100%;
+}
+
+.profile-widget {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+    .profile-widget {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.profile-info {
+    width: 63%;
+}
+
+.profile-info .profile-name {
+    font-size: 30px;
+    margin-bottom: 7px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.profile-info .user-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 500px) {
+    .profile-info .user-title {
+        font-size: 14px;
+    }
+}
+
+.profile-image {
+    width: 37%;
+}
+
+.profile-image img {
+    height: 40%;
+    width: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+    .profile-image img {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.cv-body {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .cv-body {
+        flex-direction: column;
+        padding-right: 30px;
+    }
+}
+
+.cv-body .cv-skills-widget {
+    width: 63%;
+    height: 500px;
+    padding-right: 20px;
+    display: inline-table;
+}
+
+@media only screen and (max-width: 500px) {
+    .cv-body .cv-skills-widget {
+        width: 100%;
+    }
+}
+
+.cv-body .cv-info-widget {
+    width: 37%;
+    height: 500px;
+    display: inline-table
+}
+
+.skill-content-widget h1 {
+    text-transform: uppercase;
+    color: #73808D;
+    font-size: 14px;
+    margin-bottom: 9px;
+    font-weight: 100;
+}
+
+.skill-content-widget h2 {
+    color: #000;
+    font-size: 19px;
+    margin-bottom: 9px;
+    font-weight: 700;
+}
+
+.skill-content-widget h3 {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 9px;
+    font-weight: 100;
+}
+
+.skill-content-widget h4 {
+    color: #73808D;
+    font-size: 16px;
+    margin-bottom: 9px;
+    font-weight: 100;
+}
+
+.spacer {
+    margin-bottom: 40px;
+}
+
+.cv-info-content-widget h1 {
+    color: #3d464e;
+    font-size: 15px;
+    margin-bottom: 9px;
+    font-weight: 700;
+}
+
+.cv-info-content-widget p {
+    color: #73808D;
+    font-size: 15px;
+    margin-bottom: 9px;
+    font-weight: 300;
+}
+ul{
+    margin-left: 20px;
+}
